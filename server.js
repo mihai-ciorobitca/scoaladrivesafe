@@ -6,7 +6,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
 app.get('/', (req, res) => {
-    res.render('index.html');
+    res.send("Running");
 });
 
 app.listen(3000, () => {
