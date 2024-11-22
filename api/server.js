@@ -1,12 +1,11 @@
 const express = require('express');
 const app = express();
 
-// set view folder
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
 app.get('/', (req, res) => {
-    res.send("Running");
+    res.render('index');
 });
 
 app.listen(3000, () => {
